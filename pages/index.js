@@ -109,7 +109,6 @@ export default function Home() {
             {state.columnOrder.map((columnId) => {
               const column = state.columns[columnId];
               const tasks = column.taskIds.map((taskId) => state.tasks[taskId]);
-              console.log(tasks);
 
               return <Column key={column.id} column={column} tasks={tasks} />;
             })}
